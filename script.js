@@ -8,7 +8,7 @@ async function start() {
   deceased(data.DL.total.deceased);
   recovered(data.DL.total.recovered);
   tested(data.DL.total.tested);
-  vaccinated(data.DL.delta.vaccinated);
+  vaccinated(data.DL.delta7.vaccinated);
 }
 
 function confirmed(cd) {
