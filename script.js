@@ -9,6 +9,7 @@ async function start() {
   recovered(data.DL.total.recovered);
   tested(data.DL.total.tested);
   vaccinated(data.DL.delta7.vaccinated);
+  population(data.DL.meta.population);
 }
 
 function confirmed(cd) {
@@ -29,6 +30,13 @@ function tested(td) {
 
 function vaccinated(vd) {
   document.getElementById("vacc").innerHTML = vd;
+
+}
+
+function population(pd){
+
+  document.getElementById('pop').innerHTML = pd;
+   
 }
 
 start();
